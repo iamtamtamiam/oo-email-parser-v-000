@@ -11,6 +11,7 @@ class EmailParser
   end
 
   def parse
-    @emails.split(/\s|,/).reject("")
+    split_emails = @emails.split(/\s|,/)
+    split_emails.reject("")
   end
 end
